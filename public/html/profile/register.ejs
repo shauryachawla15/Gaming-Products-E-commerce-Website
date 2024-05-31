@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Gamehub Register</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="/">
+            <img src="Gamehub.png" alt="Gamehub Logo">
+        </a>
+    </div>
+    <div class="login-rectangle"> <!-- Apply the rectangle style -->
+        <form action="/register" method="post">
+            <h2>Register</h2>
+            <div class="form-group"> <!-- Apply form-group style -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group"> <!-- Apply form-group style -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group"> <!-- Apply form-group style -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-actions"> <!-- Style for button alignment and spacing -->
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <%- include('../partials/footer'); %>
+</body>
+</html>

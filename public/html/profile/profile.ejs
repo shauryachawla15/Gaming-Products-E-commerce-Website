@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <%- include('../partials/header'); %>
+
+    <main class="profile-container">
+        <section class="profile-picture-area">
+            <div class="profile-picture">
+                <img src="/images/profile_circle.png" width="200px">
+            </div>
+            <!-- <input type="file" id="upload-picture" name="profile-picture" hidden>
+            <label for="upload-picture" class="change-picture-btn">Change Picture</label> -->
+        </section>
+        <form class="profile-form" action="/updateprofile" method="post">
+            <div class="input-group">
+                <label for="current-username">Current Username</label>
+                <input type="text" id="currentusername" name="currentusername">
+            </div>
+            <div class="input-group">
+                <label for="new-username">New Username</label>
+                <input type="text" id="newusername" name="newusername">
+            </div>
+            <div class="input-group">
+                <label for="current-password">Current Password</label>
+                <input type="password" id="currentpassword" name="currentpassword">
+            </div>
+            <div class="input-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="newpassword" name="newpassword">
+            </div>
+            <% let rusername = locals.username; %>
+            <input type="hidden" name="rusername" value='<%=rusername %>'>
+            <button type="submit" class="confirm-btn">Confirm</button>
+        </form><br>
+        <form class="logout-form" action="/unauth" method="post">
+            <button type="submit" class="confirm-btn">logout</button>
+        </form>
+    </main>
+
+    <%- include('../partials/footer'); %>
+</body>
+</html>

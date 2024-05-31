@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #0cb2ee;
+    z-index: 4;
+    top: -20px;  /* Moves the header up by 20px */
+    position: relative;
+  }
+  
+  .logo,
+  .cart,
+  .login {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .search-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .category-select {
+    border: none;
+    background: transparent;
+    padding: 8px;
+    margin-right: -1px;
+  }
+  
+  .search-input {
+    border: none;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .search-input:focus,
+  .category-select:focus {
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-left: 5px;
+    background-color: #464a4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .profile-link {
+    margin-right: 10px;
+  }
+  
+  .profile-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .login-button {
+    padding: 5px 10px;
+    background-color: #464a4b;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cart img {
+    height: 30px;
+    width: auto;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.person {
+    margin-bottom: 30px;
+}
+
+.person img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 6px solid #000000;
+}
+
+.person h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.person p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 80px;
+    border-top: 1px solid #ccc;
+}

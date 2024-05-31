@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <title>Contact Us - Gaming Products E-commerce</title>
+    <link rel="stylesheet" href="/css/contact.css"> 
+</head>
+<body>
+    <%- include('../partials/header'); %>
+    
+    <main>
+        <section>
+            <h2>Send us a message</h2>
+            <form action="submit_contact.php" method="post"> 
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
+
+                <label for="city">City:</label><br>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>Select your city</option>
+                    <option value="Albuquerque">Albuquerque</option>
+                    <option value="Atlanta">Atlanta</option>
+                    <option value="Austin">Austin</option>
+                    <option value="Baltimore">Baltimore</option>
+                    <option value="Boston">Boston</option>
+                    <option value="Charlotte">Charlotte</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Cleveland">Cleveland</option>
+                    <option value="Colorado Springs">Colorado Springs</option>
+                    <option value="Columbus">Columbus</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Denver">Denver</option>
+                    <option value="Detroit">Detroit</option>
+                    <option value="El Paso">El Paso</option>
+                    <option value="Fort Worth">Fort Worth</option>
+                    <option value="Fresno">Fresno</option>
+                    <option value="Houston">Houston</option>
+                    <option value="Indianapolis">Indianapolis</option>
+                    <option value="Jacksonville">Jacksonville</option>
+                    <option value="Kansas City">Kansas City</option>
+                    <option value="Las Vegas">Las Vegas</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Louisville">Louisville</option>
+                    <option value="Memphis">Memphis</option>
+                    <option value="Miami">Miami</option>
+                    <option value="Milwaukee">Milwaukee</option>
+                    <option value="Minneapolis">Minneapolis</option>
+                    <option value="Nashville">Nashville</option>
+                    <option value="New Orleans">New Orleans</option>
+                    <option value="New York">New York</option>
+                    <option value="Oakland">Oakland</option>
+                    <option value="Oklahoma City">Oklahoma City</option>
+                    <option value="Omaha">Omaha</option>
+                    <option value="Philadelphia">Philadelphia</option>
+                    <option value="Phoenix">Phoenix</option>
+                    <option value="Pittsburgh">Pittsburgh</option>
+                    <option value="Portland">Portland</option>
+                    <option value="Raleigh">Raleigh</option>
+                    <option value="Sacramento">Sacramento</option>
+                    <option value="San Antonio">San Antonio</option>
+                    <option value="San Diego">San Diego</option>
+                    <option value="San Francisco">San Francisco</option>
+                    <option value="San Jose">San Jose</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Tampa">Tampa</option>
+                    <option value="Tucson">Tucson</option>
+                    <option value="Tulsa">Tulsa</option>
+                    <option value="Virginia Beach">Virginia Beach</option>
+                    <option value="Washington">Washington</option>
+                </select><br><br>
+
+                <label for="zipcode">Zip Code:</label><br>
+                <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" required><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+    <%- include('../partials/footer'); %>
+</body>
+</html>

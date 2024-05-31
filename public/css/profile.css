@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #0cb2ee;
+  z-index: 4;
+  top: -20px;  /* Moves the header up by 20px */
+  position: relative;
+}
+
+.logo,
+.cart,
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+.search-cart {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.category-select {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  margin-right: -1px;
+}
+
+.search-input {
+  border: none;
+  padding: 8px;
+  width: 100%;
+}
+
+.search-input:focus,
+.category-select:focus {
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 5px;
+  background-color: #464a4b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.profile-link {
+  margin-right: 10px;
+}
+
+.profile-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.login-button {
+  padding: 5px 10px;
+  background-color: #464a4b;
+  color: white;
+  border-radius: 10px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.cart img {
+  height: 30px;
+  width: auto;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;    
+  padding: 20px;
+  margin-top: 90px;
+
+}
+
+.profile-picture-area {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 150px; 
+  height: 150px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+.change-picture-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  font-size: 18px;
+}
+
+.change-picture-btn:hover {
+  background-color: #0056b3;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px; 
+}
+
+.logout-form {
+    display: flex;
+    margin-top: 350px;
+    margin-left: -301px;
+    flex-direction: column;
+    width: 300px; 
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+.confirm-btn {
+  display: inline-block; /* Aligns the button text to be inline and center */
+  padding: 10px 20px; /* Matches the padding of Change Picture button */
+  background-color: #000000; /* Blue background */
+  color: white; /* White text */
+  text-align: center; /* Center the text inside the button */
+  text-decoration: none; /* No underline */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners with a radius of 8px */
+  cursor: pointer; /* Hand cursor on hover */
+  margin-top: 40px; /* Space above the button */
+  transition: background-color 0.3s; /* Smooth transition for background color change on hover */
+  font-size: 18px; /* Font size to match Change Picture button */
+}
+
+.confirm-btn:hover {
+  background-color: #000000; /* Darker blue background on hover */
+}
+
+.login-btn {
+  display: inline-block; /* Aligns the button text to be inline and center */
+  padding: 10px 20px; /* Matches the padding of Change Picture button */
+  background-color: #464a4b; /* Blue background */
+  color: white; /* White text */
+  text-align: center; /* Center the text inside the button */
+  text-decoration: none; /* No underline */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners with a radius of 8px */
+  cursor: pointer; /* Hand cursor on hover */
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s; /* Smooth transition for background color change on hover */
+  font-size: 18px; /* Font size to match Change Picture button */
+}
+
+.login-btn:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 110px;
+  border-top: 1px solid #ccc;
+}
+
+.footer_link {
+  margin: 5px;
+}

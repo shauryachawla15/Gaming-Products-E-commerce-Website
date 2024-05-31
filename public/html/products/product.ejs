@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <title>product</title>
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+    <%- include('../partials/header'); %>
+    <main class="product-content">
+        <% prodlist.forEach(function(product) {
+            var link = "/product?id=" + product['id'];
+            var prodid = product['id'];
+            var image="/images/" + product['name'] + ".jpg";
+            var label=product['label'];
+            var desc = product['desc'];
+            var price="$" + product['price']; %>
+            <div class="product-image">
+            <img src="<%=image %>">
+        </div>
+        <div class="product-details">
+            <h1><%=label %></h1>
+            <p><u><b>Description</b></u><br><%=desc %>
+            </p>
+            <p>Drivers: <i>Dynamic</i></p>
+            <p>Price: <strong><%=price %></strong></p>
+            <form action="/addtocart" method="post">
+            <input type="hidden" name="id" value="<%=prodid %>">
+            <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+          <% }); %>
+        
+    </main>
+    <%- include('../partials/footer'); %>
+</body>
+</html>

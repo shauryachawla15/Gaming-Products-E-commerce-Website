@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Gamehub Login</title>
+</head>
+<body>
+    <div class="logo">
+        <a href="/">
+        <img src="Gamehub.png" alt="Gamehub Logo">
+    </a>
+    </div>
+    <div class="login-rectangle"> <!-- Apply the rectangle style -->
+        <form action="/auth" method="post">
+            <h2>Login</h2>
+            <div class="form-group"> <!-- Apply form-group style -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group"> <!-- Apply form-group style -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-actions"> <!-- Style for button alignment and spacing -->
+                <button type="submit">Login</button>
+                <p><a href="/register">Register</a></p>
+                <p><a href="#">Forgot Password?</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

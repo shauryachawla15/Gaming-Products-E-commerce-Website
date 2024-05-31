@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <title>product</title>
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+    <%- include('../partials/header'); %>
+    <main class="product-content">
+        <% prodlist.forEach(function(product) {
+            var link = "/product?id=" + product['id'];
+            var image="/images/" + product['name'] + ".jpg";
+            var label=product['label'];
+            var price="$" + product['price']; %>
+            <div class="product-image">
+            <img src="<%=image %>">
+        </div>
+        <div class="product-details">
+            <h1><%=label %></h1>
+            <p><u><b>Description</b></u><br>HyperX redesigned their Cloud 1s to bring the same product at a more affordable price. It features the same
+                virtualized 7.2 surround sound, an audio control box with volume and mute controls, and detachable mic for on-the-go usage. It's main popularity 
+                comes from it's competative performace at a much lower price point.
+            </p>
+            <p>Drivers: <i>Dynamic</i></p>
+            <p>Price: <strong><%=price %></strong></p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+          <% }); %>
+        
+    </main>
+    <%- include('../partials/footer'); %>
+</body>
+</html>

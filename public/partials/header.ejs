@@ -1,0 +1,39 @@
+<header class="header">
+    <div class="logo">
+      <a href="/">
+        <img src="/Gamehub.png" alt="Gamehub Logo">
+      </a>
+    </div>
+    <div class="search-cart">
+      <div class="search-box">
+        <form action="/search" method="post">
+        <select id="categorySelect" name="categorySelect" class="category-select">
+          <option value="all">All Categories</option>
+          <option value="mice">Mice</option>
+          <option value="keyboards">Keyboards</option>
+          <option value="headphones">Headphones</option>
+        </select>
+        <input type="text" placeholder="Search..." class="search-input" id="search" name="search">
+      </div>
+      <button class="btn" type="submit">Search</button>
+    </form>
+      <div class="cart">
+        <a href="/payment">
+          <img src="/cart.png" alt="Cart">
+        </a>
+      </div>
+    </div>
+
+    <div class="login">
+      <% if(locals.username) {
+        var username = locals.username; %>
+        <a href="/profile" class="profile-link">
+        <img src="/images/profile_circle.png" alt="Profile" class="profile-icon">
+        </a>
+        <p>Welcome, <%=username %></p>
+      <% } else { %>
+      <a href="/login" class="login-button">Login</a>
+      <% }; %>
+    </div>
+
+  </header>

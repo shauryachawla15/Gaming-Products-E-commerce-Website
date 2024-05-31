@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="/css/home.css">
+  <title>Search</title>
+</head>
+
+<body>
+  <%- include('../partials/header'); %>
+
+
+    <div class="main">
+      <h1>Search Results: </h1>
+      <div class="product-grid">
+        <% prodlist.forEach(function(product) {
+            var link = "/product?id=" + product['id'];
+            var image="/images/" + product['name'] + ".jpg";
+            var label=product['label'];
+            var price="$" + product['price']; %>
+            <a href="<%=link %>" class="product">
+              <img src="<%=image %>" alt="<%=product['name'] %>">
+              <div><%=label %></div><br>
+              <div><%=price %></div>
+              </a>
+          <% }); %>
+      </div>
+    </div>
+
+    <%- include('../partials/footer'); %>
+
+</body>
+
+</html>

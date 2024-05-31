@@ -1,0 +1,73 @@
+.sidenav {
+  height: 100%;
+  width: 200px;
+  /* Same as the margin-left of .main, make sure to update both */
+  z-index: 1;
+  float:left;
+  top: 0;
+  left: 0;
+  background-color: #d4d4d4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2b2b2b;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px); /* Creates three columns */
+  grid-gap: 10px; /* Adds space between grid items */
+  padding: 10px;
+}
+
+/* Basic styling for product cards */
+.product {
+  border: 1px solid #0cb2ee;
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center; /* Center-aligns text and image */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product div {
+  margin-top: 10px; /* Adds space between the image and text */
+  font-size: 16px; /* Larger font size for visibility */
+}
+
+.main {
+  margin-left: 200px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
